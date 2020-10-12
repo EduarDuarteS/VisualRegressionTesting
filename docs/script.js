@@ -20,7 +20,7 @@ function randomPalette(numberOfPaletteColors){
     integerHueValues[0] = randomNumber;
     hueValues[0] = randomNumber/maxHSB;
 
-    for (i=1;i < numberOfPaletteColors;i++) {
+    for (let i=1;i < numberOfPaletteColors;i++) {
         integerHueValues[i] = integerHueValues[i-1] + (numberOfHSBColors/numberOfPaletteColors);
 
         if (integerHueValues[i] > maxHSB) {
